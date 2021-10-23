@@ -6,7 +6,7 @@ install:
     - pip install -r requirements-dev.txt
 
 env:
-    - PYTHONPATH=/home/travis/build/gcallah/flask-api
+    - PYTHONPATH=/home/travis/build/oscarivanramirez/demo-sweJOL
 
 script:
     - make tests
@@ -15,6 +15,6 @@ script:
 deploy:
     - provider: heroku
       api_key: $HEROKU_API_KEY
-      app: flask-api
+      app: demo-swejol
       on:
-          branch: master
+        branch: main
